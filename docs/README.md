@@ -9,7 +9,7 @@ config:
     hero:
       name: 宁采葵的博客
       tagline: VuePress Next Theme
-      text: 我的技术博客和生活碎片
+      text: 我的技术博客和生活碎片。
       actions:
         -
           theme: brand
