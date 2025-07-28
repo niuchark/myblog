@@ -7,9 +7,9 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: Theme Plume
+      name: 宁采葵的博客
       tagline: VuePress Next Theme
-      text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
+      text: 我的技术博客和生活碎片
       actions:
         -
           theme: brand
