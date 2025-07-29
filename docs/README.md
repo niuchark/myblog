@@ -8,7 +8,7 @@ config:
     background: tint-plate
     hero:
       name: 宁采葵的博客
-      tagline: VuePress Next Theme
+      tagline: Niu's blog
       text: 我的技术博客和生活碎片。
       actions:
         -

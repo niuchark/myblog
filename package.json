@@ -20,7 +20,8 @@
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
     "docs:build": "vuepress build docs --clean-cache --clean-temp",
     "docs:preview": "http-server docs/.vuepress/dist",
-    "vp-update": "pnpm dlx vp-update"
+    "vp-update": "pnpm dlx vp-update",
+    "deploy": "./deploy.sh"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.24",
