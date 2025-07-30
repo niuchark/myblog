@@ -1,22 +1,43 @@
 ---
 pageLayout: home
 externalLinkIcon: false
+# config:
+#   -
+#     type: hero
+#     full: true
+#     background: tint-plate
+#     hero:
+#       name: 宁采葵的博客
+#       tagline: Niu's blog
+#       text: 我的技术博客和生活碎片。
+#       actions:
+#         -
+#           theme: brand
+#           text: 博客
+#           link: /blog/
+#         -
+#           theme: alt
+#           text: Github →
+#           link: https://github.com/niuchark
+# ---
 config:
   -
-    type: hero
-    full: true
-    background: tint-plate
+    type: banner
+    banner: https://imgloc.com/image/21Rsg
+    bannerMask:
+      light: 0.1
+      dark: 0.3
     hero:
-      name: 宁采葵的博客
-      tagline: Niu's blog
-      text: 我的技术博客和生活碎片。
+      name: 宁采葵
+      tagline: Front End Developer
+      text: 我的技术博客和生活碎片
       actions:
         -
-          theme: brand
-          text: 博客
+          text: 进入博客
           link: /blog/
+          theme: brand
         -
+          text: Github
+          link: https://github.com/niuchark
           theme: alt
-          text: Github →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
 ---
