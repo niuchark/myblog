@@ -23,7 +23,7 @@ externalLinkIcon: false
 config:
   -
     type: banner
-    banner: https://imgloc.com/image/21Rsg
+    banner: /.vuepress/public/wallpaper-fuji.webp
     bannerMask:
       light: 0.1
       dark: 0.3
