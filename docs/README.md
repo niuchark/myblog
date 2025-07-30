@@ -23,7 +23,7 @@ externalLinkIcon: false
 config:
   -
     type: banner
-    banner: /.vuepress/public/wallpaper-fuji.webp
+    banner: https://java-ai-nck.oss-cn-beijing.aliyuncs.com/%E3%80%90%E5%93%B2%E9%A3%8E%E5%A3%81%E7%BA%B8%E3%80%91%E5%A4%9C%E6%99%AF-%E5%AF%8C%E5%A3%AB%E5%B1%B1.webp
     bannerMask:
       light: 0.1
       dark: 0.3
