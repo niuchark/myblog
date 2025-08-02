@@ -11,16 +11,8 @@
 
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
-import { plumeTheme, defineNoteConfig } from 'vuepress-theme-plume'
-
-const noteA = defineNoteConfig({
-  dir: 'note A',
-  link: '/note-a/',
-  sidebar: [
-    { text: 'one item', link: 'one' },
-    { text: 'two item', link: 'two' },
-  ]
-})
+import { plumeTheme} from 'vuepress-theme-plume'
+import notesConfig from './notesConfig'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -36,10 +28,10 @@ export default defineUserConfig({
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
   theme: plumeTheme({
-    notes: { link: '/', dir: 'notes', notes: [noteA] },
+    notes: notesConfig, // 引入 notes 配置
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
     hostname: 'https://niuck.cn',
-
+    footer: false,
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
     // docsDir: 'docs',
