@@ -8,11 +8,20 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export default defineNavbarConfig([
   { text: '首页', link: '/' },
+  {
+    text: '笔记',
+    items: [
+      { text: '前端八股', link: '/notes/home/' }, 
+      { text: '学习笔记', link: '/notes/note-a/' },
+      { text: '面经合集', link: '/notes/note-a/' },
+      { text: '手撕代码', link: '/notes/shousi/' }, 
+      { text: '高频算法', link: '/notes/suanfa/' },
+      { text: '开源项目', link: '/notes/note-a/' },
+      { text: '实习产出', link: '/notes/note-a/' },
+      { text: '其他', link: '/notes/note-a/' },
+    ],
+  },
   { text: '博客', link: '/blog/' },
   { text: '标签', link: '/blog/tags/' },
   { text: '归档', link: '/blog/archives/' },
-  {
-    text: '笔记',
-    items: [{ text: '示例', link: '/notes/demo/README.md' }, { text: 'TypeScript', link: '/notes/typescript/' }, { text: 'Rust', link: '/notes/rust/' }, { text: 'Note A', link: '/notes/note-a/' }],
-  },
 ])

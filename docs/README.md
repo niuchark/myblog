@@ -23,6 +23,9 @@ externalLinkIcon: false
 config:
   -
     type: banner
+    # banner: https://niuck.oss-cn-hangzhou.aliyuncs.com/fuji.webp
+    # banner: https://niuck.oss-cn-hangzhou.aliyuncs.com/xiaoxin.webp
+    # banner: https://niuck.oss-cn-hangzhou.aliyuncs.com/rose.webp
     banner: /rose.webp
     bannerMask:
       light: 0.1

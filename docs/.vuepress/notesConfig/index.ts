@@ -1,8 +1,8 @@
 import { defineNotesConfig } from 'vuepress-theme-plume'
-import rust from './rust.ts'
-import typescript from './typescript.ts'
-import noteA from './noteA.ts'
-import demoNote from './demoNote.ts'
+import suanfa from './suanfa.ts'
+import shousi from './shousi.ts'
+import home from './home.ts'
+import bagu from './bagu.ts'
 
 export default defineNotesConfig({
     // 声明所有笔记的目录，(默认配置，通常您不需要声明它)
@@ -10,10 +10,10 @@ export default defineNotesConfig({
     link: '/',
     // 在这里添加 note 配置
     notes: [
-        typescript,
-        rust,
-        noteA,
-        demoNote,
+        bagu,
+        home,
+        shousi,
+        suanfa,
     ]
 })
 
