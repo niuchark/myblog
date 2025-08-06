@@ -1,5 +1,4 @@
 import { defineNoteConfig } from 'vuepress-theme-plume'
-import sidebar from './sidebar.ts'
 
 export default defineNoteConfig({
     dir: 'home',
@@ -8,18 +7,7 @@ export default defineNoteConfig({
     // 所以请确保  markdown 文件的 permalink 都以 `link` 开头
     link: '/home/',
     // 手动配置侧边栏结构
-    sidebar: [
-        {
-            text: '优质八股',
-            link: '/bagu/',
-            items: 'auto',
-        },
-        {
-            text: '其他',
-            prefix: 'other',
-            items: 'auto',
-        },
-    ],
+    sidebar: 'auto'
     // 根据文件结构自动生成侧边栏
     // sidebar: [
     //     {

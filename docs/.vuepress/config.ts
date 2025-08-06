@@ -30,6 +30,9 @@ export default defineUserConfig({
   theme: plumeTheme({
     notes: notesConfig, // 引入 notes 配置
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
+    markdown: { 
+      icon: { provider: 'iconify' } // 默认支持
+    },
     hostname: 'https://niuck.cn',
     footer: false,
     /* 文档仓库配置，用于 editLink */
