@@ -37,7 +37,7 @@ config:
       actions:
         -
           text: 进入博客
-          link: /blog/
+          link: /home/x3dfig44/
           theme: brand
         -
           text: Github

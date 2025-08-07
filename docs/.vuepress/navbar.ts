@@ -11,11 +11,11 @@ export default defineNavbarConfig([
   {
     text: '笔记',
     items: [
-      { text: '前端八股', link: '/home/x3dfig44/' }, 
+      { text: '八股详解', link: '/home/a91to4hm/' }, 
       { text: '学习笔记', link: '/notes/note-a/' },
-      { text: '面经合集', link: '/notes/note-a/' },
-      { text: '手撕代码', link: '/notes/shousi/' }, 
-      { text: '高频算法', link: '/notes/suanfa/' },
+      { text: '我的面经', link: '/notes/note-a/' },
+      { text: '手撕代码', link: '/home/ggege2um/' }, 
+      { text: '算法解析', link: '/home/axpg0qc4/' },
       { text: '开源项目', link: '/notes/note-a/' },
       { text: '实习产出', link: '/notes/note-a/' },
     ],
