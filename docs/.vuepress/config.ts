@@ -16,8 +16,8 @@ import notesConfig from './notesConfig'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: '宁采葵的博客',
-  description: '宁采葵的个人博客和知识库',
+  title: '宁采柯的博客',
+  description: '宁采柯的个人博客和知识库',
 
   head: [
     // 配置站点图标

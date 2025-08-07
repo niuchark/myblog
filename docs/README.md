@@ -31,7 +31,7 @@ config:
       light: 0.1
       dark: 0.3
     hero:
-      name: 宁采葵
+      name: 宁采柯
       tagline: Front End Developer
       text: 我的技术博客和生活碎片
       actions:
