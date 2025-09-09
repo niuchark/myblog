@@ -3,7 +3,7 @@ title: 手写call函数
 createTime: 2025/08/06 17:37:39
 permalink: /home/ggege2um/
 ---
- 手写 call 函数 
+手写 call 函数 
 
 call 函数的实现步骤：
 
