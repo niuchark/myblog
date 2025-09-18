@@ -18,6 +18,12 @@ function _flat(arr, depth) {
     }
   }, []);
 }
+
+// es6
+function _myflat(arr, depth = 1) {
+    if(!Array.isArray(arr) || depth <= 0) return arr
+    return arr.reduce((prev, cur) => prev.concat(Array.isArray(cur) ? _myflat(cur, depth - 1) : cur), [])
+}
 ```
 
 ## 实现数组的push方法
@@ -40,7 +46,7 @@ Array.prototype._filter = function(fn) {
         throw Error('参数必须是一个函数');
     }
     const res = [];
-    for (let i = 0, len = this.length; i < len; i++) {
+    for (let i = 0, len = this.length; i++) {
         fn(this[i]) && res.push(this[i]);
     }
     return res;

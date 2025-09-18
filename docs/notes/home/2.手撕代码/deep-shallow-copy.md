@@ -14,7 +14,7 @@ function shallowCopy(obj) {
     // 遍历 object，并且判断是 object 的属性才拷贝
     for (let k in obj) {
         // 指示属性是否为对象的自有属性（而不是继承而来的）。
-        if (obj.hasOwnProperty(key)){
+        if (obj.hasOwnProperty(k)){
             newObj[k] = obj[k]
         }
     }
@@ -32,7 +32,7 @@ function deepCopy(obj) {
     let newObj = Array.isArray(obj) ? [] : {}
     // 遍历 object，并且判断是 object 的属性才拷贝
     for (let k in obj) {
-        if (obj.hasOwnProperty(key)){
+        if (obj.hasOwnProperty(k)){
              newObj[k] = typeof obj === "object" ? deepCopy(obj[k]) : obj[k]
         }
     }
