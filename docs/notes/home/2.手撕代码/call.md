@@ -24,23 +24,11 @@ call 函数的实现步骤：
 ```js
 // call函数实现
 // context： this要指向的目标
-Function.prototype.myCall = function(context) {
-
-  // 判断 context 是否传入，如果未传入则设置为全局对象；其他情况Object()转为普通对象即可
-
-  context = context ===null || context === undefined ? globalThis : Object(context);
-
-  let result = null;
-
-  // 将调用者函数，放到目标的属性当中去
-  context.fn = this;
-
-  // 就能调用调用者函数了，并且因为是目标调用的该函数，（谁调用，this就指向谁），所以this就成功指向了目标
-  result = context.fn(...args);
-
-  // 将属性删除
-  delete context.fn;
-
-  return result;
-};
+Function.prototype._call = function(context, ...args) {
+    context = context ? Object(context) : globalThis
+    context._fn = this
+    let res = context._fn(...args)
+    delete context._fn
+    return res
+}
 ```

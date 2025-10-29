@@ -53,3 +53,27 @@ Array.prototype._filter = function(fn) {
 }
 ```
 
+## 实现字符串的repeat方法
+输入字符串s，以及其重复的次数，输出重复的结果，例如输入abc，2，输出abcabc。
+```js
+function repeat(s, n) {
+    return (new Array(n + 1)).join(s);
+}
+```
+
+## 手写indexof
+```js
+/** 
+* 存在则返回元素所在下标，不存在则返回-1
+**/
+Array.prototype.indexOf_ = (item) =>{
+  let array = this;
+  let length = array.length;
+  for (let i = 0; i < length; i++) {
+    if (array[i] === item ) {
+      return i;
+    }
+  }
+  return -1;
+}
+```

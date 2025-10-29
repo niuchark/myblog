@@ -35,8 +35,8 @@ ES6实现
 
 ```js
 // es6 实现
-function curry(fn, ...args) {
-  return fn.length => args.length ? fn(...args) : curry.bind(null, fn, ...args);
+const curry = (fn, ...args) => {
+    return fn.length >= args.length ? fn(...args) : curry.bind(null, fn, ...args)
 }
 ```
 
